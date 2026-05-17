@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: hsl(220 12% 4%);
+  --color-bg-elevated: hsl(220 12% 6%);
+  --color-card: hsl(220 12% 6%);
+  --color-fg: hsl(210 10% 92%);
+  --color-fg-muted: hsl(215 10% 55%);
+  --color-fg-dim: hsl(215 8% 42%);
+  --color-fg-faint: hsl(220 7% 30%);
+  --color-border: hsl(220 10% 13%);
+  --color-border-strong: hsl(220 10% 18%);
+  --color-accent: hsl(160 55% 37%);
+  --color-accent-glow: hsl(160 84% 39%);
+  --color-accent-soft: hsla(160 84% 39% / 0.16);
+  --color-danger: hsl(0 60% 55%);
+  --color-warn: hsl(38 92% 50%);
+
+  
+  --color-rarity-1: #b0c3d9;
+  --color-rarity-2: #5e98d9;
+  --color-rarity-3: #4b69ff;
+  --color-rarity-4: #8847ff;
+  --color-rarity-5: #d32ce6;
+  --color-rarity-6: #eb4b4b;
+
+  --font-sans: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "Cascadia Mono", Menlo, monospace;
+  --radius: 0.375rem;
+}
+
+html, body, #app { height: 100%; }
+body { font-family: var(--font-sans); }
+
+[data-tauri-drag-region] { -webkit-app-region: drag; }
+[data-tauri-no-drag]     { -webkit-app-region: no-drag; }
+
+.tabular { font-variant-numeric: tabular-nums; font-family: var(--font-mono); }
+
+.kicker {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--color-fg-dim);
+}
+
+.glass {
+  background: rgba(10, 12, 18, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+*::-webkit-scrollbar { width: 6px; height: 6px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+*::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.16); }
+
+.mesh-bg {
+  background: hsl(220 12% 5%);
+}
