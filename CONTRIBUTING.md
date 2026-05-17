@@ -23,13 +23,4 @@ Anything tagged `TODO(steam-vent):` in the Rust source. These are concrete
 wiring tasks — start with `src-tauri/src/steam/auth.rs::login_credentials`,
 because everything else downstream depends on a working `SteamSession`.
 
-## What we DON'T want
-
-This is an intentionally focused project. The following are explicitly out of
-scope and PRs adding them will be politely declined:
-
-* Discord Rich Presence, Slack/Discord bots, telemetry, auto-update servers.
-* Pricing data, market arbitrage, trading dashboards.
-* Any feature that requires a hosted backend.
-
 Build those things in a fork.
