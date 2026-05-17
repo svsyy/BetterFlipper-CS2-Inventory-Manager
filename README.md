@@ -30,7 +30,7 @@ Windows only for now Linux build works but isn't packaged yet, see below.
 ## Build from source
 
 ```bash
-git clone <this repo>
+git clone [<this repo>](https://github.com/svsyy/BetterFlipper-CS2-Inventory-Manager)
 cd cs2-inventory-manager
 npm install
 npm run tauri build
